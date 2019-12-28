@@ -26,33 +26,46 @@ So the purpose of crud2A is **to standardize these tutorials**.
 ## Endpoints:
 
 ### Authentication(Login):
-
-`POST /login`
+Request: `POST /login`
 ```json
 {
   "email": "hogehoge@example",
   "password": "hogehoge"
+}
+```
+
+Response:
+```json
+{
+  token: "tqFPtiq7Lvv4DzhZNyJaTXYwf"
 }
 ```
 
 ### User Registration(Sign Up):
 
-`POST /users`
+Request: `POST /users`
 ```json
 {
   "email": "hogehoge@example",
   "password": "hogehoge"
+}
+```
+
+Response:
+```json
+{
+  token: "tqFPtiq7Lvv4DzhZNyJaTXYwf"
 }
 ```
 
 Required fields: `email`, `password`
 
-### Get Current User
+### Get Current User:
+- Authentication required
+- returns a current logged in user.
 
-`GET /me`
 
-Authentication required, returns a current logged in user.
-
+Request: `GET /me`
 ```json
 {
   "email": "hogehoge@example",
@@ -60,9 +73,23 @@ Authentication required, returns a current logged in user.
 }
 ```
 
+Response:
+```json
+{
+  "id": 1,
+  "email": "hogehoge@example.com",
+  "password_digest": "$2a$12$T2GGemNTIt4DXze7Wizw5eUPx3v.j",
+  "token": "tqFPtiq7Lvv4DzhZNyJaTXYw",
+  "created_at": "2019-12-28T04:10:42.267Z",
+  "updated_at": "2019-12-28T04:10:42.267Z"
+}
+```
+
 ### Get All Posts
 
-`GET /posts`
+Request: `GET /posts`
+
+Response:
 ```json
 [
   {
@@ -87,7 +114,9 @@ Authentication required, returns a current logged in user.
 
 ### Get My Posts
 
-`GET /me/posts`
+Request: `GET /me/posts`
+
+Response:
 ```json
 [
   {
@@ -112,7 +141,7 @@ Authentication required, returns a current logged in user.
 Authentication required, will return current_user's posts.
 
 ### Create Post
-
+Request:
 `POST /posts`
 ```json
 {
