@@ -16,6 +16,21 @@ But for me their tutorial is sometimes confusing ...😕
 
 So the purpose of crud2A is **to standardize these tutorials**.
 
+## Frontend
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :----------: | :------------: | :-----------: |
+|  [**React - React Router**<br/>![Star](https://img.shields.io/github/stars/gothinkster/react-redux-realworld-example-app.svg?style=social&label=Star)![Fork](https://img.shields.io/github/forks/gothinkster/react-redux-realworld-example-app.svg?style=social&label=Fork)](https://github.com/gothinkster/react-redux-realworld-example-app)   |   git status   |  git status   |
+|   git diff   |    git diff    |   git diff    |
+
+
+## Backend
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :----------: | :------------: | :-----------: |
+|  [**Rails**<br/>![Star](https://img.shields.io/github/stars/gothinkster/rails-realworld-example-app.svg?style=social&label=Star) ![Fork](https://img.shields.io/github/forks/gothinkster/rails-realworld-example-app.svg?style=social&label=Fork)](https://github.com/gothinkster/rails-realworld-example-app)   |   git status   |  git status   |
+|   git diff   |    git diff    |   git diff    |
+
 ## Crud2A Spec
 
 
